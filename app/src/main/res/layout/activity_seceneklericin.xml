@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_seceneklericin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erennl.matematikgelistirme.seceneklericin"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:text="toplama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toplama"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_below="@+id/karısik"
+        android:layout_alignLeft="@+id/karısik"
+        android:layout_alignStart="@+id/karısik"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="bölme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bolme"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_below="@+id/carpma"
+        android:layout_alignLeft="@+id/carpma"
+        android:layout_alignStart="@+id/carpma"
+        android:layout_alignRight="@+id/carpma"
+        android:layout_alignEnd="@+id/carpma"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="Çarpma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carpma"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_below="@+id/cikarma"
+        android:layout_alignLeft="@+id/cikarma"
+        android:layout_alignStart="@+id/cikarma"
+        android:textSize="20sp"
+        android:layout_alignRight="@+id/cikarma"
+        android:layout_alignEnd="@+id/cikarma" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/karısik"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_marginTop="109dp"
+        tools:text="Karışık ilerlemeli"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="0dp"
+        android:textStyle="normal|bold"
+        android:text="Karışık ilerlemeli" />
+
+    <Button
+        android:text="çıkarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cikarma"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:layout_below="@+id/toplama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/toplama"
+        android:layout_alignEnd="@+id/toplama" />
+
+    <TextView
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:textSize="40sp"
+        android:layout_alignBaseline="@+id/cikarma"
+        android:layout_alignBottom="@+id/cikarma"
+        android:textStyle="normal|bold"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:text="X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView26"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/carpma"
+        android:layout_alignBottom="@+id/carpma"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/bolme"
+        android:layout_alignBottom="@+id/bolme"
+        android:layout_alignRight="@+id/textView26"
+        android:layout_alignEnd="@+id/textView26"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/textView25"
+        android:layout_toRightOf="@+id/toplama"
+        android:layout_toEndOf="@+id/toplama" />
+
+</RelativeLayout>
